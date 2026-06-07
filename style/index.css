@@ -1,7 +1,53 @@
-.h1-id{
-    color:#ff00ff;
+:root{
+	--notipoli_naranja:#fde585;
+	--notipoli_naranjado2:#f77811;
+	--poli_naranjado1:#e62b1e;
+	--poli_azul:#18bdf0;
+	--notipoli_texto:#eee;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Cursiva', sans-serif;
+}
+header{
+	display: grid;
+	grid-template-columns: 1fr 3fr 3fr;
+	place-items: center;
+	background-color: var(--notipoli_naranja)
+}
+
+nav{
+	display:flex;
+	gap: 1rem;
 }
 
 header > img{
-    height:3rem;
+    height: 3rem;
+}
+
+header a{
+	text-decoration: none;
+	background-color: var(--notipoli_naranjado2);
+	color: var(--notipoli_texto);
+	display: block;
+	width: 5rem;
+	text-align: center;
+	padding: .5rem 0;
+	border-radius: .5rem;
+	box-shadow: 2px 2px 5px var(--notipoli_naranjado2);
+	border: 1px solid var(--notipoli_texto);
+}
+header a:hover{
+	/*background-color: var(--poli_naranjado1);*/
+	background-color: var(--poli_azul);
+	box-shadow: 2px 2px 5px var(--poli_azul);
+}
+
+
+@font-face {
+	font-family: 'Cursiva';
+	src: url('../fonts/.otf');
 }
